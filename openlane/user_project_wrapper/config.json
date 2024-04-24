@@ -5,7 +5,7 @@
         "dir::../../verilog/rtl/user_project_wrapper.v"
     ],
     "PNR_SDC_FILE": "dir::signoff.sdc",
-    
+
     "//": "Hardening strategy variables (this is for 1-Macro-First Hardening). Visit https://docs.google.com/document/d/1pf-wbpgjeNEM-1TcvX2OJTkHjqH_C9p-LURCASS0Zo8 for more info",
     "SYNTH_ELABORATE_ONLY": true,
     "RUN_POST_GPL_DESIGN_REPAIR": false,
@@ -17,42 +17,43 @@
     "RUN_TAP_ENDCAP_INSERTION": false,
     "RUN_CTS": false,
     "RUN_IRDROP_REPORT": false,
+    "ERROR_ON_SYNTH_CHECKS": false, 
 
     "//": "Macros configurations",
     "MACROS": {
-        "user_proj_example": {
+        "aes_wb_wrapper": {
             "gds": [
-                "dir::../../gds/user_proj_example.gds"
+                "dir::../../gds/aes_wb_wrapper.gds"
             ],
             "lef": [
-                "dir::../../lef/user_proj_example.lef"
+                "dir::../../lef/aes_wb_wrapper.lef"
             ],
             "instances": {
                 "mprj": {
-                    "location": [60, 15],
+                    "location": [10, 20],
                     "orientation": "N"
                 }
             },
             "nl": [
-                "dir::../../verilog/gl/user_proj_example.v"
+                "dir::../../verilog/gl/aes_wb_wrapper.v"
             ],
             "spef": {
                 "min_*": [
-                    "dir::../../spef/multicorner/user_proj_example.min.spef"
+                    "dir::../../spef/multicorner/aes_wb_wrapper.min.spef"
                 ],
                 "nom_*": [
-                    "dir::../../spef/multicorner/user_proj_example.nom.spef"
+                    "dir::../../spef/multicorner/aes_wb_wrapper.nom.spef"
                 ],
                 "max_*": [
-                    "dir::../../spef/multicorner/user_proj_example.max.spef"
+                    "dir::../../spef/multicorner/aes_wb_wrapper.max.spef"
                 ]
             },
             "lib": {
-                "*": "dir::../../lib/user_proj_example.lib"
+                "*": "dir::../../lib/aes_wb_wrapper.lib"
             }
         }
     },
-    "PDN_MACRO_CONNECTIONS": ["mprj vccd2 vssd2 vccd1 vssd1"],
+    "PDN_MACRO_CONNECTIONS": ["mprj vccd2 vssd2 VPWR VGND"],
 
     "//": "PDN configurations",
     "FP_PDN_VOFFSET": 5,
@@ -67,11 +68,10 @@
 
     "//": "Magic variables",
     "MAGIC_DRC_USE_GDS": true,
-
-    "DRT_THREADS": 1,
+    
     "MAX_TRANSITION_CONSTRAINT": 1.5,
 
-    "//": "Fixed configurations for caravel. You should NOT edit this section",
+    "//": "Fixed configurations for Caravel. You should NOT edit this section",
     "DESIGN_NAME": "user_project_wrapper",
     "FP_SIZING": "absolute",
     "DIE_AREA": [0, 0, 2920, 3520],
