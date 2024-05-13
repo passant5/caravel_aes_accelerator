@@ -102,7 +102,7 @@ module caravel_core (
     //------------------------------------------------------------
     // This value is uniquely defined for each user project.
     //------------------------------------------------------------
-    parameter USER_PROJECT_ID = 32'hEFC12404;
+    parameter USER_PROJECT_ID = 32'h24042887;
 
     /*
      *--------------------------------------------------------------------

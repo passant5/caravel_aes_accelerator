@@ -19,36 +19,36 @@ module user_id_programming(VPWR, VGND, mask_rev);
   input VGND;
   input VPWR;
   output [31:0] mask_rev;
-  wire \user_proj_id_high[0] ;
-  wire \user_proj_id_low[10] ;
-  wire \user_proj_id_high[11] ;
+  wire \user_proj_id_low[0] ;
+  wire \user_proj_id_high[10] ;
+  wire \user_proj_id_low[11] ;
   wire \user_proj_id_high[12] ;
   wire \user_proj_id_low[13] ;
   wire \user_proj_id_high[14] ;
   wire \user_proj_id_high[15] ;
-  wire \user_proj_id_low[16] ;
+  wire \user_proj_id_high[16] ;
   wire \user_proj_id_high[17] ;
-  wire \user_proj_id_high[18] ;
+  wire \user_proj_id_low[18] ;
   wire \user_proj_id_high[19] ;
-  wire \user_proj_id_high[1] ;
+  wire \user_proj_id_low[1] ;
   wire \user_proj_id_high[20] ;
   wire \user_proj_id_high[21] ;
-  wire \user_proj_id_low[22] ;
-  wire \user_proj_id_low[23] ;
-  wire \user_proj_id_low[24] ;
-  wire \user_proj_id_low[25] ;
+  wire \user_proj_id_high[22] ;
+  wire \user_proj_id_high[23] ;
+  wire \user_proj_id_high[24] ;
+  wire \user_proj_id_high[25] ;
   wire \user_proj_id_low[26] ;
-  wire \user_proj_id_low[27] ;
+  wire \user_proj_id_high[27] ;
   wire \user_proj_id_high[28] ;
   wire \user_proj_id_low[29] ;
   wire \user_proj_id_low[2] ;
-  wire \user_proj_id_low[30] ;
-  wire \user_proj_id_low[31] ;
+  wire \user_proj_id_high[30] ;
+  wire \user_proj_id_high[31] ;
   wire \user_proj_id_high[3] ;
   wire \user_proj_id_high[4] ;
   wire \user_proj_id_high[5] ;
   wire \user_proj_id_high[6] ;
-  wire \user_proj_id_high[7] ;
+  wire \user_proj_id_low[7] ;
   wire \user_proj_id_high[8] ;
   wire \user_proj_id_high[9] ;
   sky130_fd_sc_hd__decap_3 FILLER_0_15 (
@@ -528,24 +528,24 @@ module user_id_programming(VPWR, VGND, mask_rev);
     .VPWR(VPWR)
   );
   sky130_fd_sc_hd__conb_1 \mask_rev_value[0]  (
-    .HI(\user_proj_id_high[0] ),
-    .LO(mask_rev[0]),
+    .LO(\user_proj_id_low[0] ),
+    .HI(mask_rev[0]),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR)
   );
   sky130_fd_sc_hd__conb_1 \mask_rev_value[10]  (
-    .LO(\user_proj_id_low[10] ),
-    .HI(mask_rev[10]),
+    .HI(\user_proj_id_high[10] ),
+    .LO(mask_rev[10]),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR)
   );
   sky130_fd_sc_hd__conb_1 \mask_rev_value[11]  (
-    .HI(\user_proj_id_high[11] ),
-    .LO(mask_rev[11]),
+    .LO(\user_proj_id_low[11] ),
+    .HI(mask_rev[11]),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
@@ -584,8 +584,8 @@ module user_id_programming(VPWR, VGND, mask_rev);
     .VPWR(VPWR)
   );
   sky130_fd_sc_hd__conb_1 \mask_rev_value[16]  (
-    .LO(\user_proj_id_low[16] ),
-    .HI(mask_rev[16]),
+    .HI(\user_proj_id_high[16] ),
+    .LO(mask_rev[16]),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
@@ -600,8 +600,8 @@ module user_id_programming(VPWR, VGND, mask_rev);
     .VPWR(VPWR)
   );
   sky130_fd_sc_hd__conb_1 \mask_rev_value[18]  (
-    .HI(\user_proj_id_high[18] ),
-    .LO(mask_rev[18]),
+    .LO(\user_proj_id_low[18] ),
+    .HI(mask_rev[18]),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
@@ -616,8 +616,8 @@ module user_id_programming(VPWR, VGND, mask_rev);
     .VPWR(VPWR)
   );
   sky130_fd_sc_hd__conb_1 \mask_rev_value[1]  (
-    .HI(\user_proj_id_high[1] ),
-    .LO(mask_rev[1]),
+    .LO(\user_proj_id_low[1] ),
+    .HI(mask_rev[1]),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
@@ -640,32 +640,32 @@ module user_id_programming(VPWR, VGND, mask_rev);
     .VPWR(VPWR)
   );
   sky130_fd_sc_hd__conb_1 \mask_rev_value[22]  (
-    .LO(\user_proj_id_low[22] ),
-    .HI(mask_rev[22]),
+    .HI(\user_proj_id_high[22] ),
+    .LO(mask_rev[22]),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR)
   );
   sky130_fd_sc_hd__conb_1 \mask_rev_value[23]  (
-    .LO(\user_proj_id_low[23] ),
-    .HI(mask_rev[23]),
+    .HI(\user_proj_id_high[23] ),
+    .LO(mask_rev[23]),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR)
   );
   sky130_fd_sc_hd__conb_1 \mask_rev_value[24]  (
-    .LO(\user_proj_id_low[24] ),
-    .HI(mask_rev[24]),
+    .HI(\user_proj_id_high[24] ),
+    .LO(mask_rev[24]),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR)
   );
   sky130_fd_sc_hd__conb_1 \mask_rev_value[25]  (
-    .LO(\user_proj_id_low[25] ),
-    .HI(mask_rev[25]),
+    .HI(\user_proj_id_high[25] ),
+    .LO(mask_rev[25]),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
@@ -680,8 +680,8 @@ module user_id_programming(VPWR, VGND, mask_rev);
     .VPWR(VPWR)
   );
   sky130_fd_sc_hd__conb_1 \mask_rev_value[27]  (
-    .LO(\user_proj_id_low[27] ),
-    .HI(mask_rev[27]),
+    .HI(\user_proj_id_high[27] ),
+    .LO(mask_rev[27]),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
@@ -712,16 +712,16 @@ module user_id_programming(VPWR, VGND, mask_rev);
     .VPWR(VPWR)
   );
   sky130_fd_sc_hd__conb_1 \mask_rev_value[30]  (
-    .LO(\user_proj_id_low[30] ),
-    .HI(mask_rev[30]),
+    .HI(\user_proj_id_high[30] ),
+    .LO(mask_rev[30]),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR)
   );
   sky130_fd_sc_hd__conb_1 \mask_rev_value[31]  (
-    .LO(\user_proj_id_low[31] ),
-    .HI(mask_rev[31]),
+    .HI(\user_proj_id_high[31] ),
+    .LO(mask_rev[31]),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
@@ -760,8 +760,8 @@ module user_id_programming(VPWR, VGND, mask_rev);
     .VPWR(VPWR)
   );
   sky130_fd_sc_hd__conb_1 \mask_rev_value[7]  (
-    .HI(\user_proj_id_high[7] ),
-    .LO(mask_rev[7]),
+    .LO(\user_proj_id_low[7] ),
+    .HI(mask_rev[7]),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
